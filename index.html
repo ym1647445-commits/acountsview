@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>حسابات الألعاب | DevPlay Studio</title>
+  <link rel="stylesheet" href="css/themes.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+  <div class="animated-bg"><span></span><span></span><span></span><span></span></div>
+
+  <header class="site-header glass">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.png" alt="DevPlay Studio" />
+      <div>
+        <b>DevPlay Studio</b>
+        <small data-i18n="tagline">حسابات ألعاب موثوقة</small>
+      </div>
+    </a>
+    <nav>
+      <a href="index.html" data-i18n="navAccounts">الحسابات</a>
+      <a href="https://devplaystudio.com" target="_blank" data-i18n="navStore">المتجر</a>
+      <a href="https://wa.me/201035966569" target="_blank" data-i18n="navContact">تواصل معنا</a>
+    </nav>
+    <div class="top-actions">
+      <button id="langToggle" class="icon-btn">EN</button>
+      <button id="themeToggle" class="icon-btn">☾</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <span class="pill" data-i18n="heroPill">وسيط آمن بين البائع والمشتري</span>
+        <h1 data-i18n="heroTitle">حسابات ألعاب موثوقة وآمنة</h1>
+        <p data-i18n="heroText">اختار الحساب المناسب، شوف الكود والسعر والوصف، واطلبه مباشرة عبر واتساب مع DevPlay Studio.</p>
+        <div class="hero-features">
+          <span data-i18n="featurePrivacy">خصوصية كاملة</span>
+          <span data-i18n="featureSecure">تسليم آمن</span>
+          <span data-i18n="featureSupport">دعم مباشر</span>
+        </div>
+      </div>
+      <div class="hero-logo glass">
+        <img src="assets/logo.png" alt="DevPlay Studio" />
+      </div>
+    </section>
+
+    <section class="filters glass">
+      <div class="filter-title">
+        <h2 data-i18n="filtersTitle">تصفية الحسابات</h2>
+        <p id="countText">جاري تحميل الحسابات...</p>
+      </div>
+      <div class="filter-grid">
+        <input id="searchInput" type="search" placeholder="بحث بالكود أو اللعبة أو الاسم" data-i18n-placeholder="searchPlaceholder" />
+        <select id="gameFilter"><option value="">كل الألعاب</option></select>
+        <input id="minPrice" type="number" min="0" placeholder="أقل سعر" data-i18n-placeholder="minPrice" />
+        <input id="maxPrice" type="number" min="0" placeholder="أعلى سعر" data-i18n-placeholder="maxPrice" />
+        <button id="resetFilters" class="btn ghost" data-i18n="reset">إعادة ضبط</button>
+      </div>
+    </section>
+
+    <section id="accountsGrid" class="accounts-grid"></section>
+
+    <section class="why">
+      <h2 data-i18n="whyTitle">لماذا DevPlay Studio؟</h2>
+      <div class="why-grid">
+        <div class="glass why-card"><b>🔒</b><h3 data-i18n="whyPrivacyTitle">خصوصية تامة</h3><p data-i18n="whyPrivacyText">لا نشارك بيانات البائع أو المشتري.</p></div>
+        <div class="glass why-card"><b>✅</b><h3 data-i18n="whyGuaranteeTitle">ضمان للطرفين</h3><p data-i18n="whyGuaranteeText">التحويل للبائع بعد تأكيد المشتري.</p></div>
+        <div class="glass why-card"><b>🎮</b><h3 data-i18n="whyAccountsTitle">حسابات مختارة</h3><p data-i18n="whyAccountsText">نعرض فقط الحسابات المتاحة لدينا.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© DevPlay Studio - كل خدماتك الرقمية في مكان واحد</p>
+  </footer>
+
+  <script src="js/supabase.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
