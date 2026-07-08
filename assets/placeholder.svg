@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
-  <defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#070b18"/><stop offset=".5" stop-color="#1b1240"/><stop offset="1" stop-color="#041b36"/></linearGradient></defs>
-  <rect width="1200" height="800" fill="url(#g)"/>
-  <circle cx="220" cy="150" r="180" fill="#8b5cf6" opacity=".25"/>
-  <circle cx="980" cy="670" r="220" fill="#00d4ff" opacity=".18"/>
-  <rect x="250" y="210" width="700" height="380" rx="38" fill="rgba(255,255,255,.08)" stroke="#00d4ff" stroke-width="4"/>
-  <text x="600" y="360" text-anchor="middle" fill="#fff" font-family="Arial" font-size="70" font-weight="700">DevPlay Studio</text>
-  <text x="600" y="450" text-anchor="middle" fill="#00d4ff" font-family="Arial" font-size="42">Account Image</text>
-</svg>
